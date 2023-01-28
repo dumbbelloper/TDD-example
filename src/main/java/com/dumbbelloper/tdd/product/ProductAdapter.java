@@ -1,6 +1,8 @@
 package com.dumbbelloper.tdd.product;
 
-class ProductAdapter implements ProductPort {
+import org.springframework.stereotype.Component;
+
+@Component class ProductAdapter implements ProductPort {
     private final ProductRepository productRepository;
 
     public ProductAdapter(ProductRepository productRepository) {

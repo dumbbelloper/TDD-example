@@ -1,5 +1,8 @@
 package com.dumbbelloper.tdd.product;
 
+import org.springframework.stereotype.Component;
+
+@Component
 class ProductService {
     private final ProductPort productPort;
 
@@ -10,6 +13,5 @@ class ProductService {
     public void addProduct(final AddProductRequest request) {
         final Product product = new Product(request.name(), request.price(), request.discountPolicy());
         productPort.save(product);
-//            throw new UnsupportedOperationException("Unsupported addProduct");
     }
 }
