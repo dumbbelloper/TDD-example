@@ -19,7 +19,6 @@ class Product {
 
     public void assignId(final Long id) {
         this.id = id;
-
     }
 
     public Long getId() {
