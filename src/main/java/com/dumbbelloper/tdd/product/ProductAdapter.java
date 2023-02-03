@@ -16,7 +16,7 @@ class ProductAdapter implements ProductPort {
     }
 
     @Override
-    public Product getProduct(final long productId) {
+    public Product getProduct(final Long productId) {
         return productRepository.findById(productId).orElseThrow(
                 () -> new IllegalArgumentException("상품 x")
         );
