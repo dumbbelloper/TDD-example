@@ -1,7 +1,9 @@
-package com.dumbbelloper.tdd.order;
+package com.dumbbelloper.tdd.order.adapter;
 
-import com.dumbbelloper.tdd.product.Product;
-import com.dumbbelloper.tdd.product.ProductRepository;
+import com.dumbbelloper.tdd.order.application.port.OrderPort;
+import com.dumbbelloper.tdd.order.domain.Order;
+import com.dumbbelloper.tdd.product.domain.Product;
+import com.dumbbelloper.tdd.product.adapter.ProductRepository;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,9 +1,9 @@
-package com.dumbbelloper.tdd.payment;
+package com.dumbbelloper.tdd.payment.adapter;
 
-import com.dumbbelloper.tdd.order.Order;
-import com.dumbbelloper.tdd.order.OrderRepository;
-import com.dumbbelloper.tdd.product.DiscountPolicy;
-import com.dumbbelloper.tdd.product.Product;
+import com.dumbbelloper.tdd.order.domain.Order;
+import com.dumbbelloper.tdd.order.adapter.OrderRepository;
+import com.dumbbelloper.tdd.payment.application.port.PaymentPort;
+import com.dumbbelloper.tdd.payment.domain.Payment;
 import org.springframework.stereotype.Component;
 
 @Component

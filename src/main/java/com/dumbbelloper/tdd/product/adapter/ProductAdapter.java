@@ -1,5 +1,7 @@
-package com.dumbbelloper.tdd.product;
+package com.dumbbelloper.tdd.product.adapter;
 
+import com.dumbbelloper.tdd.product.application.port.ProductPort;
+import com.dumbbelloper.tdd.product.domain.Product;
 import org.springframework.stereotype.Component;
 
 @Component

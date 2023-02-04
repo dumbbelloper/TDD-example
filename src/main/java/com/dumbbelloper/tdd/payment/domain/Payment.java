@@ -1,6 +1,6 @@
-package com.dumbbelloper.tdd.payment;
+package com.dumbbelloper.tdd.payment.domain;
 
-import com.dumbbelloper.tdd.order.Order;
+import com.dumbbelloper.tdd.order.domain.Order;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,6 +11,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+public
 class Payment {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

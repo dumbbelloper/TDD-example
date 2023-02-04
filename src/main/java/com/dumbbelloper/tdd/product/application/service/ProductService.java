@@ -1,5 +1,7 @@
-package com.dumbbelloper.tdd.product;
+package com.dumbbelloper.tdd.product.application.service;
 
+import com.dumbbelloper.tdd.product.application.port.ProductPort;
+import com.dumbbelloper.tdd.product.domain.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -9,8 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @Component
 @RestController
 @RequestMapping("/products")
-public
-class ProductService {
+public class ProductService {
     private final ProductPort productPort;
 
     ProductService(final ProductPort productPort) {
@@ -27,6 +28,8 @@ class ProductService {
 
     @GetMapping("/{productId}")
     public ResponseEntity<GetProductResponse> getProduct(@PathVariable(name = "productId") final long productId) {
+//        final Cookie cookie = request.getCookies()[0];
+//        final String name = cookie.getName();
         final Product product = productPort.getProduct(productId);
         final GetProductResponse response = new GetProductResponse(product.getId(), product.getName(), product.getPrice(), product.getDiscountPolicy());
         return ResponseEntity.ok(response);

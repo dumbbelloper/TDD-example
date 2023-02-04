@@ -1,6 +1,7 @@
 package com.dumbbelloper.tdd.product;
 
-import org.assertj.core.api.Assertions;
+import com.dumbbelloper.tdd.product.domain.DiscountPolicy;
+import com.dumbbelloper.tdd.product.domain.Product;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;

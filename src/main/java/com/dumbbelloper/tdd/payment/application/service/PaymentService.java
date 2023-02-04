@@ -1,6 +1,8 @@
-package com.dumbbelloper.tdd.payment;
+package com.dumbbelloper.tdd.payment.application.service;
 
-import com.dumbbelloper.tdd.order.Order;
+import com.dumbbelloper.tdd.order.domain.Order;
+import com.dumbbelloper.tdd.payment.application.port.PaymentPort;
+import com.dumbbelloper.tdd.payment.domain.Payment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;

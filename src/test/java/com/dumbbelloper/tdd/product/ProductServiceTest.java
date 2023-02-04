@@ -1,5 +1,9 @@
 package com.dumbbelloper.tdd.product;
 
+import com.dumbbelloper.tdd.product.application.port.ProductPort;
+import com.dumbbelloper.tdd.product.application.service.GetProductResponse;
+import com.dumbbelloper.tdd.product.application.service.ProductService;
+import com.dumbbelloper.tdd.product.application.service.UpdateProductRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

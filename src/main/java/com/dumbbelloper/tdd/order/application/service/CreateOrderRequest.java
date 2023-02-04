@@ -1,9 +1,9 @@
-package com.dumbbelloper.tdd.order;
+package com.dumbbelloper.tdd.order.application.service;
 
 import org.springframework.util.Assert;
 
-record CreateOrderRequest(Long productId, int quantity) {
-    CreateOrderRequest {
+public record CreateOrderRequest(Long productId, int quantity) {
+    public CreateOrderRequest {
         Assert.notNull(productId, "pid not null");
         Assert.isTrue(quantity > 0, "quantity > 0");
     }

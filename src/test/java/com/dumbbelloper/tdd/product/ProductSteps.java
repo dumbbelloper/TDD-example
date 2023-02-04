@@ -1,5 +1,8 @@
 package com.dumbbelloper.tdd.product;
 
+import com.dumbbelloper.tdd.product.application.service.AddProductRequest;
+import com.dumbbelloper.tdd.product.application.service.UpdateProductRequest;
+import com.dumbbelloper.tdd.product.domain.DiscountPolicy;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;

@@ -1,5 +1,6 @@
-package com.dumbbelloper.tdd.product;
+package com.dumbbelloper.tdd.product.application.service;
 
+import com.dumbbelloper.tdd.product.domain.DiscountPolicy;
 import org.springframework.util.Assert;
 
 public record UpdateProductRequest(String name, int price, DiscountPolicy discountPolicy) {

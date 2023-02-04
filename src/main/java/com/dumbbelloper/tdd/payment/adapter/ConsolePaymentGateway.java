@@ -1,4 +1,4 @@
-package com.dumbbelloper.tdd.payment;
+package com.dumbbelloper.tdd.payment.adapter;
 
 
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.dumbbelloper.tdd.product;
+package com.dumbbelloper.tdd.product.domain;
 
 import lombok.AccessLevel;
 import lombok.Getter;

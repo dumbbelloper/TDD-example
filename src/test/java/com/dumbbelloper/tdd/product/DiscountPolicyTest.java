@@ -1,10 +1,9 @@
 package com.dumbbelloper.tdd.product;
 
-import org.assertj.core.api.Assertions;
+import com.dumbbelloper.tdd.product.domain.DiscountPolicy;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 class DiscountPolicyTest {
 

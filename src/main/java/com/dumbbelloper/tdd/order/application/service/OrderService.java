@@ -1,6 +1,8 @@
-package com.dumbbelloper.tdd.order;
+package com.dumbbelloper.tdd.order.application.service;
 
-import com.dumbbelloper.tdd.product.Product;
+import com.dumbbelloper.tdd.order.application.port.OrderPort;
+import com.dumbbelloper.tdd.order.domain.Order;
+import com.dumbbelloper.tdd.product.domain.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;

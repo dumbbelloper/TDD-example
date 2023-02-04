@@ -1,6 +1,6 @@
-package com.dumbbelloper.tdd.order;
+package com.dumbbelloper.tdd.order.domain;
 
-import com.dumbbelloper.tdd.product.Product;
+import com.dumbbelloper.tdd.product.domain.Product;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

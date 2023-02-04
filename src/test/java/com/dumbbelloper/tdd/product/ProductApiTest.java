@@ -1,16 +1,16 @@
 package com.dumbbelloper.tdd.product;
 
 import com.dumbbelloper.tdd.ApiTest;
+import com.dumbbelloper.tdd.product.adapter.ProductRepository;
+import com.dumbbelloper.tdd.product.application.service.ProductService;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
-import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class ProductApiTest extends ApiTest {
