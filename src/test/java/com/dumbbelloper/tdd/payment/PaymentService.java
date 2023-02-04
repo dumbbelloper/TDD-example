@@ -3,6 +3,7 @@ package com.dumbbelloper.tdd.payment;
 import com.dumbbelloper.tdd.order.Order;
 import org.springframework.stereotype.Component;
 
+@Component
 class PaymentService {
     private final PaymentPort paymentPort;
 

@@ -5,6 +5,7 @@ import com.dumbbelloper.tdd.product.DiscountPolicy;
 import com.dumbbelloper.tdd.product.Product;
 import org.springframework.stereotype.Component;
 
+@Component
 class PaymentAdapter implements PaymentPort {
     private final PaymentGateway paymentGateway;
     private final PaymentRepository paymentRepository;

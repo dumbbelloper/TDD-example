@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/orders")
-class OrderService {
+public class OrderService {
     private final OrderPort orderPort;
 
     OrderService(final OrderPort orderPort) {
@@ -19,6 +19,7 @@ class OrderService {
     }
 
     @PostMapping
+    @Transactional
     public ResponseEntity<Void> createOrder(@RequestBody final CreateOrderRequest request) {
         final Product product = orderPort.getProductById(request.productId());
         Order order = new Order(product, request.quantity());
