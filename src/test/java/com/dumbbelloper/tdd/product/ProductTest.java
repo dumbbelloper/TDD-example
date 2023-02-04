@@ -14,4 +14,18 @@ public class ProductTest {
         assertThat(product.getPrice()).isEqualTo(2000);
     }
 
+    @Test
+    public void none_discounted_product() {
+        final Product product = new Product("상품명", 1000, DiscountPolicy.NONE);
+        final int discountedPrice = product.getDiscountedPrice();
+        assertThat(discountedPrice).isEqualTo(1000);
+    }
+
+    @Test
+    public void fix_discounted_product() {
+        final Product product = new Product("상품명", 1000, DiscountPolicy.FIX_1000_AMOUNT);
+        final int discountedPrice = product.getDiscountedPrice();
+        assertThat(discountedPrice).isEqualTo(0);
+    }
+
 }
